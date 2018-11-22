@@ -4,18 +4,54 @@ body {
 	background: rgb(7, 100, 207)
 }
 .container {
+	text-align: center;
 	line-height: 1.5em;
-	max-width: 60em;
+	width: 60em;
 	margin: 0 auto;
 	padding: 2em;
 	
 }
+
 .logo {
-	font-size: 1.5em;
+	display: flex;
+	flex-flow: row;
+	padding: 2em;
+	color: white;
+}
+.logo h1 {
+	font-weight: 100;
+	font-size: 4em;
+	text-transform: uppercase;
+	margin: 1.2em 0 0 0;
+}
+.bg {
+	background-color: ghostwhite;
+}
+
+.topnav {
+	padding-left: 6em;
+
+}
+.topnav a{
+	display: block;
+	border-bottom: 1px solid;
+	padding: .2em 2em 0 1em;
+	font-size: 1em;
+	font-weight: 400;
+	line-height: 1.6em;
+}
+figure {
+	margin: 0;
+}
+.vsh-logo {
+	margin: 6em 3em 0 0;
+	padding: 0;
+	width: 5em;
+	height: 10em;
 }
 .col-II {
 	display: grid;
-	grid-template-columns:1fr 1fr;
+	grid-template-columns:1fr 1fr 1fr;
 	color: white;
 
 }
@@ -25,8 +61,8 @@ body {
 
 }
 .tagline {
-	line-height: 1.5em;
-	margin: 1em 0 3.6 0;
+
+	margin: 1em 2em 3em 0;
 	text-align: right;
 	color: #F7D37E;
 	font-weight: normal;	
@@ -35,31 +71,18 @@ body {
 header nav {
 	text-align: right;
 }
-.trans {
-	background-color:white;
-	opacity:0.5;
-	padding: 1em;
-}
+
 .blar {
 	color: blue;
 }
 a {
 	color: white;
 }
-.beige {
 
-	text-align: center;
-	width: 100%;
-    background: linear-gradient(to top, #f9da85 0%, #ffffcc 100%);
-}
-.staekka{
-	height: 50em;
-}
 .footercontainer {
 	color: white;
 	margin: 0 auto;
 	max-width: 54em;
-
 }
 ul {
   list-style-type: none;
@@ -81,40 +104,7 @@ dl {
 	text-align: center;
 }
 
-.val {
-	display: inline-block;
-	padding: 3.5em;
-	margin: 0;
-	font-size: 0.7em;
-}
-.val a {
-	float:left;
-	clear:none;  
-	color: #F7D37E;
-	background-color: rgb(7, 100, 207);	
-	border-right: 1px solid white;
-	padding: 12px 20px;
-	text-decoration: none;
-}
-.fyrsti {
-	height: 2.13em;	
-	border-radius: 4px 0 0 4px;
-}
-.seinnasti {
-	height: 2.13em;
-	border-radius: 0 4px 4px 0;
-	border-right: 0;
 
-}
-.val, a:visited {
-	color: gray;
-}
-.val a:hover {
-	color: white;
-}
-.val a:active {
-	color: red;
-}
 .val2 a:hover {
 	color: lightgrey;
 }
@@ -125,26 +115,9 @@ dl {
 	color: grey;
 }
 .fit {
-	height: 100vh;
-
-
-
+	height: 90vh;
 }
-.litur1,
-.litur3,
-.litur5 {
-	background: linear-gradient(to bottom, #00ff00 -100%, #ffff00 100%);
 
-
-}
-.litur2,
-.litur4,
-.litur6 {
-	background: linear-gradient(to top, #00ff00 -100%, #ffff00 100%);
-}
-.pruf {
-
-}
 #myBtn {
   display: none;
   position: fixed;
@@ -153,7 +126,7 @@ dl {
   z-index: 99;
   border: none;
   outline: none;
-  background-color: white;
+  background: linear-gradient(to bottom, #ffcc66 0%, #ffffcc 100%);
   color: black;
   font-size: 2em;
   cursor: pointer;
@@ -164,13 +137,27 @@ dl {
 #myBtn:hover {
   background-color: lightgrey;
 }
+
 .fontlitur h1 {
 	color: rgb(7, 100, 207);
 	padding: 1em;
+
 }
 .staerd {
-	height: 85vh;
+	height: 60vh;
+	padding: 7em;
 }
-.fit {
-	padding: 5em;
+
+.logo img{
+	height: 100px;
+	width: 100px;
+
+}
+.left {
+	text-align: left;
+	padding: 2em;
+} 
+.eg {
+	display: grid;
+	grid-template-columns:1fr 1fr
 }

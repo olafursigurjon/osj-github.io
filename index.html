@@ -2,48 +2,117 @@
 <html lang="is">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="utf-8"> 
-    <title>Verkefni 4.1 bakgrunnar</title>
+    <meta charset="utf-8">
+    <title>Verkefni 5 Tenglar</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
   </head>
-  <body>
-    <header class="container col-II">
-      <div class="I-I logo">
-        <h1>
-          Bakgrunnslitir
-        </h1>
-      </div>
-      <div class="I-I">
-        <h3 class="tagline">Verkefni 4.1</h3>
-        <nav class="val2">
-          <a href="../">VEFÞ1VG05AU | </a> <!-- "../" Upp um eina möppu -->
-          <a href="index.html">Bakgrunnar | </a>
-          <a href="verkefni42.html">Efnisyfirlit</a>
-        </nav>
-      </div>
+  <body id="top">
+     <button onclick="topFunction()" id="myBtn" title="Go to top">&#x21e7;</button> 
+
+      <script>
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function() {scrollFunction()};
+
+      function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+              document.getElementById("myBtn").style.display = "block";
+          } else {
+              document.getElementById("myBtn").style.display = "none";
+          }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+      }
+      </script>
+    
+    <header class="">
+      <section class="col-III">
+        <div> <!-- empty space --> </div>
+        <div class="I-I logo">
+          <figure class="vsh-logo">
+            <img src="img/vef-logo.svg">
+          </figure>
+          <h1>
+            Vefsíðuhönnun
+          </h1>
+        </div>
+        <div class="topnav">
+          <h3 class="tagline">Verkefni 5</h3>
+          <nav class="val2">
+            <ul>
+              <li><a href="#vef">VEFÞ1VG05  </a></li> <!-- "../" Upp um eina möppu -->
+              <li><a href="#ummig">Um mig  </a></li>
+              <li><a href="#ahugamal">Áhugamál</a></li>
+              <li><a href="#kvikmynd">Kvikmynd 5.3</a></li>
+              <li><a href="#hljodskra">Hlóðskrá 5.4</a></li>
+              <li><a href="#kort">Staðsetning 5.5</a></li>
+            </ul>
+          </nav>
+        </div>
+      </section>
     </header>
+
     <!-- Main -->
-    <section class="beige">
-      <div class="container lead">
-        <h1 class="blar">Litaskali í bakgrunni </h1>
-        <p><strong>Notaðu vefsíðu sem þú ert þegar búinn að setja upp í verkefni 3 og breyttu bakgrunni síðunnar þannig að uppsetningin sé svipuð uppsetningunni hér.</strong></p>
-        <p>Þegar skjár er minni en 60em (960px) þá á textinn í vefsíðunni að dragast saman og vera sýnilegur, prófaðu að nota stílbragðið <em> "max-with".</em></p>
-        <p>Þetta vefdæmi er að hluta til byggt á verkefnadæmi á vef Shayhowe,<em> Gradient backrounds</em> en þar sem hann hefur ekki uppfært vefinn notar hvorki flexbox eða grid lausinr er ekki hægt að fara eftir hans uppsetningu </p>
-        <blockquote class="trans">Hér er bakgrunnurinn hvítur með 50% gagnsæi <i>(e. transparency).</i><br>Til að skoða kóðann í vafra þá skaltu opna vafra (Chrome) og smella á &#9776; táknið hægra megin í valslánni og velja <em>"Developers tools"</em> úr fellilistanum.<br> Eða bara smella á takkann <b>F12</b> á lyklaborðinu, "Inspectorinn" virkar svipað í Firefox og M. Edge</blockquote>
+    <section class="bg staerd">
+      <div class="container fontlitur">
+        <h1>Verkefni 5 - Myndvinnsla</h1>
+        <p>Nú er komið að því að hanna forsíðu á vefinn þinn.<br> Við erum að tala um rótina (root) á vefsvæði
+            þínu<br> á tsuts.tskoli.is/2t/(þín kennitala)/index.html Uppbygging<br> (layout), letur- og litaval er í þínum
+            höndum. Tilvalið er að nota uppsetninguna<br> úr 4. verkefni sem grunn (template)og nota forsíðuna
+            sem ferilskrá og efnisyfirlit<br> yfir verkefnin sem unnin eru í Vefsíðuhönnun og fleiri áföngum. </p>     
+      </div> 
+    </section>
+    <section class=" bg" id="ummig">
+      <div class="container fit fontlitur">
+        <h1>Um mig</h1>
+        <div class="eg">
+          <p class="left">Ég heiti Ólafur Sigurjón Jökulsson.<br> Ég er 17 ára og mér finnst gaman að spila tölvuleiki.<br>Ég tók grunnskólapróf í Öldutunsskóla í Hafnarfirði.<br>Ég er nemandi í Tækniskólanum og er í Tölvubraut. </p>
+          <img src="img/image.png"
+        </div>      
       </div>
     </section>
-    <footer class="footercontainer col-III">
-      <nav class="left">
+    <section class="bg" id="ahugamal">
+      <div class="container fit fontlitur">
+        <h1>Áhugamál</h1>
+        <img src="img/osu!.png">
+        <img src="img/maxresdefault.jpg">
+      </div>
+    </section>
+    <section class="bg" id="kvikmynd">
+      <div class="container fit fontlitur">
+        <h1>Kvikmynd</h1>
+        <iframe width="854" height="480" src="https://www.youtube.com/embed/AdRCLTqzpqE" frameborder="0" gesture="media" allowfullscreen></iframe>
+      </div>
+    </section>
+    <section class="bg" id="hljodskra">
+      <div class="container fit fontlitur">
+        <h1>Hljóðskrá</h1>
+        <audio src="Big Spender Ft ASAP Rocky.mp3" autoplay controls loop></audio>
+      </div>
+    </section>
+    <section class="bg" id="kort">
+      <div class="container fit fontlitur">
+        <h1>staðsetningarkort 5.5</h1>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1034.7920840082602!2d-21.9041165521026!3d64.1391669629145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48d674cc84500001%3A0x16719bf129fa31a7!2zVMOma25pc2vDs2xpbm4!5e0!3m2!1sen!2sus!4v1510827082585" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+    </section>
+    <footer id="
+    " class="footercontainer col-III">
+      <!-- sama efni og á index kemur hér -->
+        <nav>
         <h4>Verkefni 4.2 - Listar DD og UL </h4>
         <dl>
           <dt>Nafn</dt>
-            <dd>Ólafursigurjón</dd>
+            <dd>Ólafur Sigurjón</dd>
           <dt>Tölvupóstur</dt>
             <dd>olisigurjon@gmail.com</dd>
           <dt>Áfangi og braut</dt>
-            <dd>VEFÞ1VG05AU, tölvubraut</dd>
+            <dd>VEFÞ1VG05, tölvubraut</dd>
           <dt>skóli</dt>
             <dd>Upplýsingatækniskólinn</dd>
         </dl>
@@ -52,31 +121,32 @@
         <h4>Innri tenglar <em>(relative links)</em></h4>
         <ul class="val3">
           <li><a href="../verkefni1/index.html">Verkefni 1.</a></li>
-          <li><a href="../verkefni2/index.html">Verkefni 2.</a></li>
-          <li><a href="../verkefni3/verkefni3,1/index.html">Verkefni 3,1.</a></li>
-          <li><a href="../verkefni3/verkefni3,2/index.html">Verkefni 3,2.</a></li>
-          <li><a href="../verkefni4/index.html">Verkefni 4.</a></li>
+          <li><a href="../verk2/index.html">Verkefni 2.</a></li>
+          <li><a href="../verk3/verk3.1/index.html">Verkefni 3.</a></li>
+          <li><a href="../verk4/index.html">Verkefni 4.</a></li>
         </ul>
       </nav>
       <nav class="right">
         <h4>Ytri tenglar <em>(absolute links)</em></h4>
         <ul class="val3">
           <li>
-            <a href="https://learn.shayhowe.com/" target="_blank" title="Kennsluvefur">shayhowe.com</a>
+            <a href="https://gridbyexample.com/" target="_blank" title="Kennsluvefur">gridbyexample.com</a>
           </li>
-            <a href="http://learn.shayhowe.com/html-css/setting-backgrounds-and-gradients/" target="_blank" title="Kennsluvefur">Setting Backgrounds</a>
+            <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank" title="Kennsluvefur">Flexbox</a>
           <li>
-            <a href="http://learn.shayhowe.com/html-css/creating-lists/" target="_blank" title="Kennsluvefur">Creating Lists</a>
-          </li>
-          <li>
-            <a href="https://learn.shayhowe.com/html-css/creating-lists/#horizontally-displaying-list" target="_blank" title="Kennsluvefur">Displaying List</a>
+            <a href="https://helpx.adobe.com/photoshop/topics.html" target="_blank" title="Kennsluvefur">Photoshop</a>
           </li>
           <li>
-            <a href="https://learn.shayhowe.com/html-css/creating-lists/#list-item-styling" target="_blank" title="Kennsluvefur">List Item Styling</a>
+            <a href="http://learn.shayhowe.com/html-css/adding-media/" target="_blank" title="Kennsluvefur">Adding media</a>
+          </li>
+          <li>
+            <a href="http://learn.shayhowe.com/html-css/writing-your-best-code/" target="_blank" title="Kennsluvefur">Writing your best code</a>
           </li>
         </ul>
       </nav>
     </footer>
-    <p class="copy">&copy; 2017 BA</p>
+      <p class="copy">&copy; 2017 BA</p>
+    </footer>
+
   </body>
 </html>
